@@ -1,0 +1,5 @@
+n = int(input())
+b = input()
+x = max(b.split('!'), key=len)
+i = b.index(x)
+print(0 if i == 0 else (n-1 if i + len(x) == n else i + len(x)//2))
